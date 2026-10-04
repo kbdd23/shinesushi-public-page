@@ -20,7 +20,7 @@ const PROMOCIONES = {
   6: { dia: "Sábado", descuento: "-10%", detalle: "en Roll de Carta", flyer: "viernes-sabados.webp" },
 };
 
-const CARPETA_FLYERS = "../static/assets/promociones/";
+const CARPETA_FLYERS = "static/assets/promociones/";
 
 function pintarPromocion(dia) {
   const promocion = PROMOCIONES[dia];
