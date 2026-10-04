@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shine Sushi | Sushi en Iquique y Alto Hospicio</title>
+    <meta
+      name="description"
+      content="Shine Sushi, sushi para servir, llevar o delivery en Iquique y Alto Hospicio. Revisa el menú completo y pide por WhatsApp."
+    />
+    <meta name="theme-color" content="#0d0d0d" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../static/assets/favicon-96.png" />
+    <link rel="apple-touch-icon" href="../static/assets/favicon-96.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Outfit:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../static/styles/styles.css" />
+  </head>
+  <body>
+    <a class="saltar-al-contenido" href="#contenido">Saltar al contenido</a>
+
+    <header class="header">
+      <div class="contenedor header__interior">
+        <a class="header__marca" href="index.html" aria-label="Shine Sushi, ir al inicio">
+          <img
+            class="header__logo"
+            src="../static/assets/logo.webp"
+            alt="Shine Sushi"
+            width="800"
+            height="217"
+          />
+        </a>
+
+        <nav class="header__nav" aria-label="Navegación principal">
+          <a class="header__enlace header__enlace--activo" href="index.html" aria-current="page">Inicio</a>
+          <a class="header__enlace" href="menu.html">Menú</a>
+          <a class="header__enlace" href="sucursales.html">Sucursales</a>
+        </nav>
+
+        <div class="header__acciones">
+          <button class="boton boton--primario header__pedido" type="button" data-abrir-sucursal>
+            Pedir ahora
+          </button>
+
+          <button
+            class="hamburguesa"
+            id="boton-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-movil"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="hamburguesa__linea"></span>
+            <span class="hamburguesa__linea"></span>
+            <span class="hamburguesa__linea"></span>
+          </button>
+        </div>
+      </div>
+
+    </header>
+
+    <nav class="nav-movil" id="nav-movil" aria-label="Navegación móvil">
+      <a class="nav-movil__enlace" href="index.html">Inicio</a>
+      <a class="nav-movil__enlace" href="menu.html">Menú</a>
+      <a class="nav-movil__enlace" href="sucursales.html">Sucursales</a>
+    </nav>
+
+    <main id="contenido">
+      <section class="hero">
+        <div class="hero__fondo" role="img" aria-label="Tako flameado de Shine Sushi"></div>
+        <div class="hero__velo"></div>
+
+        <img
+          class="hero__emblema"
+          src="../static/assets/logo.webp"
+          alt=""
+          aria-hidden="true"
+          width="800"
+          height="217"
+        />
+
+        <div class="contenedor hero__contenido">
+          <p class="hero__etiqueta" id="estado" data-estado="desconocido">
+            <span class="estado__punto" aria-hidden="true"></span>
+            <span id="estado-texto">Consultando horario</span>
+          </p>
+
+          <h1 class="hero__titulo">Sushi que <span>brilla</span> en Iquique</h1>
+
+          <p class="hero__bajada">Disfruta del mejor sushi sin salir de tu hogar.</p>
+
+          <div class="hero__acciones">
+            <a
+              class="boton boton--primario"
+              href="menu.html"
+              aria-label="Ver el menú completo"
+              >MENÚ</a
+            >
+            <button class="boton boton--whatsapp" type="button" data-abrir-sucursal>
+              PEDIR POR WHATSAPP
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion cartas" id="cartas">
+        <div class="contenedor">
+          <a class="banda" href="menu.html#sushi">
+            <span class="banda__punta" aria-hidden="true"></span>
+            <span class="banda__nombre">Sushi</span>
+            <img
+              class="banda__imagen"
+              src="../static/assets/roll.webp"
+              alt=""
+              width="516"
+              height="255"
+            />
+            <span class="banda__punta banda__punta--derecha" aria-hidden="true"></span>
+          </a>
+
+          <a class="banda" href="menu.html#burgers">
+            <span class="banda__punta" aria-hidden="true"></span>
+            <span class="banda__nombre">Burgers</span>
+            <img
+              class="banda__imagen"
+              src="../static/assets/burger.webp"
+              alt=""
+              width="355"
+              height="223"
+            />
+            <span class="banda__punta banda__punta--derecha" aria-hidden="true"></span>
+          </a>
+
+          <a class="banda" href="menu.html#bar">
+            <span class="banda__punta" aria-hidden="true"></span>
+            <span class="banda__nombre">Bar</span>
+            <img
+              class="banda__imagen"
+              src="../static/assets/bar.webp"
+              alt=""
+              width="288"
+              height="302"
+            />
+            <span class="banda__punta banda__punta--derecha" aria-hidden="true"></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="seccion promociones" id="promociones">
+        <div class="contenedor">
+          <h2 class="promociones__caption">DESCUENTOS DIARIOS</h2>
+
+          <p class="promociones__bajada">¡Aprovecha nuestras promociones especiales!</p>
+
+          <button class="promocion" type="button" data-abrir-flyer>
+            <span class="promocion__texto">
+              <span class="promocion__etiqueta" id="promocion-etiqueta">Promoción de hoy</span>
+              <span class="promocion__descuento" id="promocion-descuento">—</span>
+              <span class="promocion__detalle" id="promocion-detalle"></span>
+            </span>
+
+            <span class="promocion__flyer">
+              <img
+                class="promocion__imagen"
+                id="promocion-imagen"
+                src="../static/assets/promociones/lunes.webp"
+                alt=""
+                width="516"
+                height="558"
+              />
+            </span>
+          </button>
+
+          <div class="dias" id="dias" role="tablist" aria-label="Elegir el día de la semana">
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="1">Lun</button>
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="2">Mar</button>
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="3">Mié</button>
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="4">Jue</button>
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="5">Vie</button>
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="6">Sáb</button>
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="0">Dom</button>
+          </div>
+
+          <p class="promocion__legal">
+            Válida solo con pago en efectivo o transferencia. No acumulable con otras promociones.
+          </p>
+
+          <noscript>
+            <ul class="promocion__lista">
+              <li>Lunes: 4x3 / 3x2 en Roll de Carta</li>
+              <li>Martes: -10% en Tiraditos y Ceviche</li>
+              <li>Miércoles y Jueves: -15% en Roll de Carta, Arma Tu Roll</li>
+              <li>Viernes y Sábado: -10% en Roll de Carta</li>
+              <li>Domingo: -10% en Tablas</li>
+            </ul>
+          </noscript>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="contenedor footer__interior">
+        <div>
+          <img
+            class="footer__logo"
+            src="../static/assets/logo.webp"
+            alt="Shine Sushi"
+            width="800"
+            height="217"
+          />
+          <p class="footer__credito">Sushi en Iquique y Alto Hospicio desde 2014.</p>
+        </div>
+
+        <div class="footer__redes">
+          <a class="footer__red" href="https://www.instagram.com/shinesushi/">Instagram</a>
+          <a
+            class="footer__red"
+            href="https://www.facebook.com/search/top?q=Shine%20Sushi%20Alto%20Hospicio"
+            >Facebook Alto Hospicio</a
+          >
+          <a
+            class="footer__red"
+            href="https://www.facebook.com/search/top?q=Shine%20Sushi%20Iquique"
+            >Facebook Iquique</a
+          >
+        </div>
+      </div>
+
+      <div class="contenedor">
+        <div class="footer__legal">
+          <span>Shine Sushi © 2026</span>
+          <a href="terminos-y-condiciones.html">Términos y condiciones</a>
+          <a href="reglamento-interno.html">Reglamento interno</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="dialogo" id="dialogo-sucursal" aria-labelledby="dialogo-titulo">
+      <div class="dialogo__panel">
+        <button
+          class="dialogo__cerrar"
+          type="button"
+          data-cerrar-sucursal
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+
+        <h2 class="dialogo__titulo" id="dialogo-titulo">Elija una sucursal</h2>
+
+        <div class="dialogo__opciones">
+          <a class="opcion-sucursal opcion-sucursal--rojo" href="https://wa.me/56572443313">
+            Whatsapp Playa Brava
+          </a>
+
+          <a class="opcion-sucursal opcion-sucursal--azul" href="https://wa.me/56222267828">
+            WhatsApp Baquedano
+          </a>
+
+          <a class="opcion-sucursal opcion-sucursal--blanco" href="https://wa.me/56572790722">
+            Whatsapp Alto Hospicio
+          </a>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="dialogo dialogo--flyer" id="dialogo-flyer" aria-label="Flyer de la promoción">
+      <button class="flyer__cerrar" type="button" data-cerrar-flyer aria-label="Cerrar">×</button>
+      <img
+        class="flyer__imagen"
+        id="flyer-imagen"
+        src="../static/assets/promociones/lunes.webp"
+        alt=""
+        width="516"
+        height="558"
+      />
+    </dialog>
+
+    <script type="module" src="../static/js/app.js"></script>
+  </body>
+</html>

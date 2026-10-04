@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menú | Shine Sushi</title>
+    <meta
+      name="description"
+      content="Menú completo de Shine Sushi: rolls, handrolls, tablas, hamburguesas y bar. Iquique y Alto Hospicio."
+    />
+    <meta name="theme-color" content="#0d0d0d" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../static/assets/favicon-96.png" />
+    <link rel="apple-touch-icon" href="../static/assets/favicon-96.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Outfit:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../static/styles/styles.css" />
+  </head>
+  <body>
+    <a class="saltar-al-contenido" href="#contenido">Saltar al contenido</a>
+
+    <header class="header">
+      <div class="contenedor header__interior">
+        <a class="header__marca" href="index.html" aria-label="Shine Sushi, ir al inicio">
+          <img
+            class="header__logo"
+            src="../static/assets/logo.webp"
+            alt="Shine Sushi"
+            width="800"
+            height="217"
+          />
+        </a>
+
+        <nav class="header__nav" aria-label="Navegación principal">
+          <a class="header__enlace" href="index.html">Inicio</a>
+          <a class="header__enlace header__enlace--activo" href="menu.html" aria-current="page"
+            >Menú</a
+          >
+          <a class="header__enlace" href="sucursales.html">Sucursales</a>
+        </nav>
+
+        <div class="header__acciones">
+          <button class="boton boton--primario header__pedido" type="button" data-abrir-sucursal>
+            Pedir ahora
+          </button>
+
+          <button
+            class="hamburguesa"
+            id="boton-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-movil"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="hamburguesa__linea"></span>
+            <span class="hamburguesa__linea"></span>
+            <span class="hamburguesa__linea"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav-movil" id="nav-movil" aria-label="Navegación móvil">
+      <a class="nav-movil__enlace" href="index.html">Inicio</a>
+      <a class="nav-movil__enlace" href="menu.html">Menú</a>
+      <a class="nav-movil__enlace" href="sucursales.html">Sucursales</a>
+    </nav>
+
+    <main id="contenido">
+      <section class="seccion menu-encabezado">
+        <div class="contenedor">
+          <h1 class="seccion__titulo">MENÚ</h1>
+        </div>
+      </section>
+
+      <section class="seccion menu-catalogo">
+        <div class="contenedor">
+          <details class="acordeon" id="sushi">
+            <summary class="acordeon__cabecera">
+              <h2 class="acordeon__titulo">Sushi</h2>
+              <span class="acordeon__flecha" aria-hidden="true"></span>
+            </summary>
+
+            <div class="acordeon__cuerpo">
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo grupo__titulo--badge badge">Piqueos</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <div class="grilla grilla--dos">
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Gyosas de Pollo/Cerdo <span class="parentesis">(6 unid)</span></h5>
+                      <p class="tarjeta__detalle">Empanaditas orientales fritas o salteadas selladas en mantequilla rellenas de pollo o cerdo</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.200</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Gyosas de Camarón <span class="parentesis">(6 unid)</span></h5>
+                      <p class="tarjeta__detalle">Empanaditas orientales fritas o salteadas selladas en mantequilla rellenas de camarón</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.800</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Crunch Ball Pollo <span class="parentesis">(4 unid)</span></h5>
+                      <p class="tarjeta__detalle">Bolas de arroz crujientes rellenas de pollo, queso crema y cebollín</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.500</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Crunch Ball Camarón o Salmón <span class="parentesis">(4 unid)</span></h5>
+                      <p class="tarjeta__detalle">Bolas de arroz crujientes rellenas de salmón o camarón, queso crema y cebollín</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.800</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Camarones Furay <span class="parentesis">(8 unid)</span></h5>
+                      <p class="tarjeta__detalle">Bastones fritos de camarones ecuatoriano apanados en panko</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.500</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Chicken Furay <span class="parentesis">(8 unid)</span></h5>
+                      <p class="tarjeta__detalle">Bastones de pollo crujientes apanados en panko</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.500</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Arrollado Primavera <span class="parentesis">(6 unid)</span></h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.500</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Arrollado Jamón/Queso <span class="parentesis">(6 unid)</span></h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.500</span>
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </details>
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo">Piezas sueltas</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Nigiris</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Nigiri Elección <span class="parentesis">(2 unid)</span></h5>
+                          <p class="tarjeta__detalle">Camarón o salmón o pulpo</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$2.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Nigiri Furay <span class="parentesis">(2 unid)</span></h5>
+                          <p class="tarjeta__detalle">Nigiri de camarón frito crujiente en panko</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$3.100</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Nigiri Parrillero <span class="parentesis">(2 unid)</span></h5>
+                          <p class="tarjeta__detalle">Nigiri de carne con chimichurri flameado</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$3.300</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Sashimis</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sashimi Salmón <span class="parentesis">(5 unid)</span></h5>
+                          <p class="tarjeta__detalle">5 cortes de salmón fresco</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sashimi Pulpo <span class="parentesis">(5 unid)</span></h5>
+                          <p class="tarjeta__detalle">5 cortes de pulpo</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sashimi Atún <span class="parentesis">(5 unid)</span></h5>
+                          <p class="tarjeta__detalle">5 cortes de atún fresco</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.600</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Handrolls</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Handroll Pollo</h5>
+                          <p class="tarjeta__detalle">Roll entero relleno de pollo teriyaki, queso crema y cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Handroll Camarón</h5>
+                          <p class="tarjeta__detalle">Roll entero relleno de camarón furay, queso crema y cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Handroll Champiñón</h5>
+                          <p class="tarjeta__detalle">Roll entero relleno de champiñón, queso crema y cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.300</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Hosomaki</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Hosomaki</h5>
+                          <p class="tarjeta__detalle">Envuelto en nori</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$4.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Hosomaki Cheese</h5>
+                          <p class="tarjeta__detalle">Envuelto en nori y queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Hosomaki Furay</h5>
+                          <p class="tarjeta__detalle">Envuelto en nori empanizado en panko</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Hosomaki 1 Envoltura + 1 Relleno</h5>
+                          <p class="tarjeta__detalle">Rellenos a elección: Carne con queso crema, Camarón con queso crema, Kanikama con queso crema, Pollo con queso crema, Pulpo con queso crema, Salmón con queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.500</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Gunkan</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Gunkan Sake <span class="parentesis">(2 unid)</span></h5>
+                          <p class="tarjeta__detalle">Arroz japonés envuelto en fresco salmón relleno de queso crema y tartar de salmón</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$4.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Gunkan Frutal <span class="parentesis">(2 unid)</span></h5>
+                          <p class="tarjeta__detalle">Arroz japonés envuelto de mango relleno de queso crema y frutilla cremosa con toques de maracuyá</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$4.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Gunkan Avocado <span class="parentesis">(2 unid)</span></h5>
+                          <p class="tarjeta__detalle">Arroz japonés envuelto de lámina de palta relleno de queso crema y camarón salteado en mantequilla</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$3.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Gunkan Tartar Sake <span class="parentesis">(2 unid)</span></h5>
+                          <p class="tarjeta__detalle">Arroz japonés envuelto en nori relleno de cubitos de palta hass y tartar de salmón en nuestra deliciosa salsa acevichada</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$4.400</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </details>
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo">Rolls</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Rolls Especiales</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Spacy Heaven</h5>
+                          <p class="tarjeta__detalle">Tartar de pulpo y salmón mitad spacy y mitad acevichado, camarón furay, queso y palta</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.100</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Roll a lo Pobre</h5>
+                          <p class="tarjeta__detalle">Envuelto en panko y cubierto en papas hilo. Carne mechada, queso amarillo, tomate salteado</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Boss Sake</h5>
+                          <p class="tarjeta__detalle">Coronado con corte de salmón sellado a la plancha fusionado con toques de sésamo. Relleno de camarón furay, queso crema y palta hass</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sweet Roll</h5>
+                          <p class="tarjeta__detalle">Panqueque de chocolate bañado en salsa chocolate. Relleno de mango, frutilla, queso crema endulzado</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Acevichado Roll</h5>
+                          <p class="tarjeta__detalle">Bañado en salsa acevichada. Envuelto en palta hass y coronado con un mini ceviche. Relleno de camarón empanizado en panko, palta hass y cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.700</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Chick Hass</h5>
+                          <p class="tarjeta__detalle">Roll sin arroz. Envuelto en palta y toques de sésamo. Pollo furay, palta, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Chizu Roll</h5>
+                          <p class="tarjeta__detalle">Roll sin arroz. Envuelto en queso crema gratinado con toques de morrón y cebollín. Carne mechada, palta, pollo furay</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sakekani Roll</h5>
+                          <p class="tarjeta__detalle">Roll sin arroz. Envuelto en salmón coronado con tartar de kanikama y salsa spacy. Relleno de camarón empanizado en panko, queso crema y pepino</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Big Acevichado</h5>
+                          <p class="tarjeta__detalle">¡Nuevo! Bañado en salsa acevichada, toques de canchita y camote hilo. Envuelto en palta hass y sésamo coronado con un mini ceviche shine. Relleno de camarón salteado, atún, palta hass</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$11.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Futocheese</h5>
+                          <p class="tarjeta__detalle">Toques de almendra. Envuelto en queso crema. Camarón furay, palta hass, pollo furay, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.300</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Poli Roll</h5>
+                          <p class="tarjeta__detalle">Envuelto en arcoiris de salmón, camarón, pulpo, palta. Camarón furay, pimentón, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Takoflam</h5>
+                          <p class="tarjeta__detalle">Envuelto en láminas de pulpo y chimichurri flambeado. Camarón furay, palta hass, cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.700</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Anticuchero Maki</h5>
+                          <p class="tarjeta__detalle">Roll relleno de camarón furay y palta envuelto en atún cubierto en salsa anticuchera de ají colorado sin picante sopleteado y coronado con fresca chalaquita de cebolla morada cilantro con limón</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Lomo Saltado Maki</h5>
+                          <p class="tarjeta__detalle">Roll envuelto en carne sopleteada con encebollada de lomo saltado y coronado con papas al hilo relleno de carne tempurizada de lomo marinada en salsa anticuchera sin picante y papas hilo</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.300</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Parme Maki</h5>
+                          <p class="tarjeta__detalle">Con salsa acevichada. Roll relleno de salmón tempura, queso crema y palta coronado con un tartar de camarón, pulpo y queso parmesano sopleteado</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.300</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Purple Ebi</h5>
+                          <p class="tarjeta__detalle">Bañado en salsa de olivos y camote hilo. Relleno de camarón salteado, palta hass y queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.700</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Serrano Maki</h5>
+                          <p class="tarjeta__detalle">Bañado en salsa de carne. Relleno de carne mechada, queso crema y palta envuelto en jamón serrano</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.200</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Salmón Citrus</h5>
+                          <p class="tarjeta__detalle">Bañado en salsa teriyaki. Roll relleno de camarón furay, queso crema y palta envuelto en salmón sopleteado coronado de finas láminas de limón</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Bataki</h5>
+                          <p class="tarjeta__detalle">Roll relleno de camarón furay y palta cubierto en un delicioso batayaki de mariscos camarón pulpo y calamar salteado en mantequilla limón y vino blanco con toques de togarashi</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.100</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mar y Tierra</h5>
+                          <p class="tarjeta__detalle">Roll relleno de queso crema, camarón salteado y palta envuelto en delicioso jamón serrano</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Gratin Cheese</h5>
+                          <p class="tarjeta__detalle">Envuelto en queso crema gratinado y toques de nueces. Pollo furay, palta, cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Futomine</h5>
+                          <p class="tarjeta__detalle">Roll gigante envuelto en panko. Pulpo, camarón, salmón, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.700</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mangoes</h5>
+                          <p class="tarjeta__detalle">Envuelto en mango. Frutilla, camarón furay, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Fruti Fruti</h5>
+                          <p class="tarjeta__detalle">Bañado en salsa teriyaki. Envuelto en finas láminas de frutilla. Pollo furay, piña, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.600</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Cheese Frutal</h5>
+                          <p class="tarjeta__detalle">Con almendras caramelizadas. Envuelto en queso crema. Frutilla, mango, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Futoshine</h5>
+                          <p class="tarjeta__detalle">Con salsa de maracuyá. Envuelto en arcoiris de mango y queso crema. Pollo furay, frutilla, piña, queso crema, camarón furay</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tartarin</h5>
+                          <p class="tarjeta__detalle">Con salsa acevichada. Envuelto en nori tempurizado, coronado por tartar de salmón. Relleno de camarón furay, palta</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Quinuroll</h5>
+                          <p class="tarjeta__detalle">Bañado en salsa maracuyá. Envuelto en queso crema y quinua confitada. Piña furay, mango, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Futosake</h5>
+                          <p class="tarjeta__detalle">Roll futomaki. Envuelto en nori: salmón, camarón, palta, pepino, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Futoniku</h5>
+                          <p class="tarjeta__detalle">Futomaki en panko. Carne, pollo, camarón furay, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Huancaino Maki</h5>
+                          <p class="tarjeta__detalle">Bañado en salsa huancaína. Roll relleno de pescado blanco frito en tempura, queso crema y pepino coronado con aceituna</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.500</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Avocados</h4>
+                      <img
+                        class="subgrupo__icono"
+                        src="../static/assets/sushis/avocado_logo.webp"
+                        alt=""
+                        width="48"
+                        height="30"
+                      />
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Paltayaki</h5>
+                          <p class="tarjeta__detalle">Pollo teriyaki, queso crema, cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.100</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Terimito</h5>
+                          <p class="tarjeta__detalle">Pollo teriyaki, palta, palmito</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Takollin</h5>
+                          <p class="tarjeta__detalle">Pulpo, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.600</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Ebicheese</h5>
+                          <p class="tarjeta__detalle">Camarón, pepino, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.100</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sakeku</h5>
+                          <p class="tarjeta__detalle">Salmón, queso crema, cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Lightroll</h5>
+                          <p class="tarjeta__detalle">Pepino, zanahoria, espinaca, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Furay Cheese</h5>
+                          <p class="tarjeta__detalle">Pollo furay, queso crema, ciboulette</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.300</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Hamcheese</h5>
+                          <p class="tarjeta__detalle">Carne, queso crema, cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.300</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Ebipim</h5>
+                          <p class="tarjeta__detalle">Camarón furay, queso crema, palta</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.300</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Sésamo</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Chickmito</h5>
+                          <p class="tarjeta__detalle">Pollo teriyaki, palmito, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.200</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Ebiku</h5>
+                          <p class="tarjeta__detalle">Camarón, pepino, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Vege Cream</h5>
+                          <p class="tarjeta__detalle">Pepino, zanahoria, espinaca, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.200</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Ebi Prika</h5>
+                          <p class="tarjeta__detalle">Camarón furay, pimentón, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tako Cream</h5>
+                          <p class="tarjeta__detalle">Pulpo, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sakellin</h5>
+                          <p class="tarjeta__detalle">Salmón, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">California Furay</h5>
+                          <p class="tarjeta__detalle">Pollo furay, ciboulette, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Nikucheese</h5>
+                          <p class="tarjeta__detalle">Carne, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.300</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Panko o Tempura</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Takura</h5>
+                          <p class="tarjeta__detalle">Pulpo, palta, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.100</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Toricheese</h5>
+                          <p class="tarjeta__detalle">Pollo teriyaki, palta, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.300</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tori Light</h5>
+                          <p class="tarjeta__detalle">Palmito, palta, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Jaiken</h5>
+                          <p class="tarjeta__detalle">Jaiba, queso crema, merkén</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.700</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Torimito</h5>
+                          <p class="tarjeta__detalle">Pollo furay, palta, palmito</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tori Sake</h5>
+                          <p class="tarjeta__detalle">Salmón, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.700</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tori Kani</h5>
+                          <p class="tarjeta__detalle">Kanikama, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tori Ebi</h5>
+                          <p class="tarjeta__detalle">Camarón, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.300</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tori Mechado</h5>
+                          <p class="tarjeta__detalle">Carne mechada, albahaca, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.300</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Salmón <span class="parentesis">(Sake)</span></h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sake Fu</h5>
+                          <p class="tarjeta__detalle">Pimentón, palmito, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sake Roll</h5>
+                          <p class="tarjeta__detalle">Camarón, palta, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sake Takocheese</h5>
+                          <p class="tarjeta__detalle">Pulpo, palta, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.300</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sakugo</h5>
+                          <p class="tarjeta__detalle">Masago, palta, cebollín, queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.900</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Queso Crema</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tako Lemon</h5>
+                          <p class="tarjeta__detalle">Queso gratinado. Roll relleno de palta y pulpo furay envuelto en queso crema gratinado coronado con finas láminas de pulpo y limón</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.600</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Ebiyaki</h5>
+                          <p class="tarjeta__detalle">Queso gratinado. Roll relleno de camarón furay, palta y cebollín envuelto en queso crema gratinado bañado en salsa teriyaki</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.700</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Cheese Yaki</h5>
+                          <p class="tarjeta__detalle">Roll relleno de pollo teriyaki, palta y cebollín envuelto en queso crema</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.500</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </details>
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo grupo__titulo--badge badge">Arma tu Roll</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <div class="grilla grilla--dos">
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Envuelto en Palta</h5>
+                      <p class="tarjeta__detalle">Arma tu roll: 1 envoltura + 1 relleno principal + 2 rellenos secundarios</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$7.500</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Envuelto en Salmón</h5>
+                      <p class="tarjeta__detalle">Arma tu roll: 1 envoltura + 1 relleno principal + 2 rellenos secundarios</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$7.500</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Envuelto en Queso Crema</h5>
+                      <p class="tarjeta__detalle">Arma tu roll: 1 envoltura + 1 relleno principal + 2 rellenos secundarios</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$7.500</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Envuelto en Panko o Tempura</h5>
+                      <p class="tarjeta__detalle">Arma tu roll: 1 envoltura + 1 relleno principal + 2 rellenos secundarios</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$8.400</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Envuelto en Sésamo o Ciboulette</h5>
+                      <p class="tarjeta__detalle">Arma tu roll: 1 envoltura + 1 relleno principal + 2 rellenos secundarios</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.500</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Envuelto en Hosomaki</h5>
+                      <p class="tarjeta__detalle">Arma tu roll: 1 envoltura + 1 relleno principal + 2 rellenos secundarios</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$5.500</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Envuelto en Pollo <span class="parentesis">(Apanado)</span></h5>
+                      <p class="tarjeta__detalle">Arma tu roll: 1 envoltura + 1 relleno principal + 2 rellenos secundarios</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$8.000</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Envuelto en Carne <span class="parentesis">(Apanado)</span></h5>
+                      <p class="tarjeta__detalle">Arma tu roll: 1 envoltura + 1 relleno principal + 2 rellenos secundarios</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$8.000</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Envuelto en Mango</h5>
+                      <p class="tarjeta__detalle">Arma tu roll: 1 envoltura + 1 relleno principal + 2 rellenos secundarios</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$7.000</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Envuelto en Masago</h5>
+                      <p class="tarjeta__detalle">Arma tu roll: 1 envoltura + 1 relleno principal + 2 rellenos secundarios</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$7.000</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Roll Futomaki</h5>
+                      <p class="tarjeta__detalle">Arma tu roll: 1 envoltura + 1 relleno principal + 2 rellenos secundarios</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$8.000</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Roll Sin Arroz <span class="parentesis">(Envuelto en Nori)</span></h5>
+                      <p class="tarjeta__detalle">Arma tu roll: 1 envoltura + 1 relleno principal + 2 rellenos secundarios. Rolls sin arroz no incluyen envoltura, tiene costo adicional 2.500</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$7.500</span>
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </details>
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo">Tablas</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Tablas</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tabla 20 Piezas</h5>
+                          <p class="tarjeta__detalle">1 <span class="parentesis">(env. Palta)</span> camarón furay, queso crema, cebollín <span class="parentesis">(10 cortes)</span>; 1 <span class="parentesis">(env. Panko)</span> pollo teriyaki, queso crema, cebollín <span class="parentesis">(10 cortes)</span></p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$11.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tabla 40 Piezas</h5>
+                          <p class="tarjeta__detalle">1 <span class="parentesis">(env. Palta)</span> pollo teriyaki, queso crema, cebollín <span class="parentesis">(10 cortes)</span>; 1 <span class="parentesis">(env. Tempura)</span> champiñón, queso crema, palta <span class="parentesis">(10 cortes)</span>; 1 <span class="parentesis">(env. Panko)</span> pollo teriyaki, queso crema, cebollín <span class="parentesis">(10 cortes)</span>; 1 <span class="parentesis">(env. Sésamo)</span> kanikama, queso crema, palta <span class="parentesis">(10 cortes)</span></p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$18.600</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tabla 50 Piezas</h5>
+                          <p class="tarjeta__detalle">1 <span class="parentesis">(env. Palta)</span> pollo teriyaki, queso crema, cebollín <span class="parentesis">(10 cortes)</span>; 1 <span class="parentesis">(env. Tempura)</span> camarón furay, palta, queso crema <span class="parentesis">(10 cortes)</span>; 1 <span class="parentesis">(env. Panko)</span> pollo teriyaki, queso crema, cebollín <span class="parentesis">(10 cortes)</span>; 1 <span class="parentesis">(env. Sésamo)</span> kanikama, queso crema, palta <span class="parentesis">(10 cortes)</span>; 1 <span class="parentesis">(env. Nori)</span> palmito, queso crema, palta <span class="parentesis">(10 cortes)</span></p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$22.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tabla 80 Piezas</h5>
+                          <p class="tarjeta__detalle">2 <span class="parentesis">(env. Palta)</span> pollo teriyaki, queso crema, cebollín <span class="parentesis">(10 cortes)</span>; 2 <span class="parentesis">(env. Tempura)</span> camarón furay, palta, queso crema <span class="parentesis">(10 cortes)</span>; 2 <span class="parentesis">(env. Panko)</span> pollo teriyaki, queso crema, cebollín <span class="parentesis">(10 cortes)</span>; 1 <span class="parentesis">(env. Sésamo)</span> kanikama, queso crema, palta <span class="parentesis">(10 cortes)</span>; 1 <span class="parentesis">(env. Panko)</span> champiñón, queso crema, palta <span class="parentesis">(10 cortes)</span></p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$32.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tabla 100 Piezas</h5>
+                          <p class="tarjeta__detalle">2 <span class="parentesis">(env. Palta)</span> pollo teriyaki, queso crema, cebollín <span class="parentesis">(10 cortes)</span>; 2 <span class="parentesis">(env. Tempura)</span> camarón furay, palta, queso crema <span class="parentesis">(10 cortes)</span>; 2 <span class="parentesis">(env. Panko)</span> pollo teriyaki, queso crema, palta <span class="parentesis">(10 cortes)</span>; 2 <span class="parentesis">(env. Sésamo)</span> kanikama, queso crema, palta <span class="parentesis">(10 cortes)</span>; 1 <span class="parentesis">(env. Cibulette)</span> champiñón, queso crema, cebollín <span class="parentesis">(10 cortes)</span>; 1 <span class="parentesis">(env. Tempura)</span> palmito, queso crema, cebollín <span class="parentesis">(10 cortes)</span></p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$36.990</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Tablas Especiales</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tabla Veggy <span class="parentesis">(30 Piezas)</span></h5>
+                          <p class="tarjeta__detalle">10 <span class="parentesis">(env. Palta)</span> zapallo italiano tempura, pimentón; 10 <span class="parentesis">(env. Sésamo)</span> aceituna, morrón, palmito; 10 <span class="parentesis">(env. Cibulette)</span> champiñón salteado, zanahoria, palta</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$15.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tabla Light <span class="parentesis">(30 Piezas)</span></h5>
+                          <p class="tarjeta__detalle">10 <span class="parentesis">(env. Palta)</span> palmito, zanahoria, queso crema; 10 <span class="parentesis">(env. Sésamo)</span> aceituna, lechuga, pollo teriyaki, queso crema; 10 <span class="parentesis">(env. Panko)</span> pollo teriyaki, queso crema, palta</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$15.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tabla Pacífico <span class="parentesis">(30 Cortes)</span></h5>
+                          <p class="tarjeta__detalle">10 <span class="parentesis">(env. Salmón)</span> pulpo, queso crema, cebollín; 10 <span class="parentesis">(env. fino cebollín)</span> camarón, palta, queso crema; 10 <span class="parentesis">(env. Panko)</span> jaiba, queso crema, pimentón</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$17.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tabla Pluh <span class="parentesis">(40 Cortes)</span></h5>
+                          <p class="tarjeta__detalle">10 <span class="parentesis">(env. Queso Gratinado)</span> pollo teriyaki, morrón; 10 <span class="parentesis">(env. Panko)</span> pollo teriyaki, queso crema y cebollín; 10 <span class="parentesis">(env. Sésamo y Salsa Acevichada)</span> camarón furay, queso crema, palta; 10 <span class="parentesis">(env. Palta y Sésamo)</span> pollo furay, queso crema, cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$19.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tabla Milhot <span class="parentesis">(40 Cortes)</span></h5>
+                          <p class="tarjeta__detalle">10 <span class="parentesis">(env. Panko)</span> pollo teriyaki, queso crema, cebollín; 10 <span class="parentesis">(env. Tempura)</span> camarón furay, queso crema, palta; 10 <span class="parentesis">(env. Pollo empanizado)</span> carne, queso crema, cebollín; 10 <span class="parentesis">(env. Carne empanizada)</span> pollo furay, queso crema, albahaca, champiñón</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$20.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tabla Shine <span class="parentesis">(50 Cortes)</span></h5>
+                          <p class="tarjeta__detalle">10 <span class="parentesis">(env. Queso)</span> camarón furay, palta, cebollín; 10 <span class="parentesis">(env. Salmón)</span> pulpo, palta, queso crema; 10 <span class="parentesis">(env. Mango)</span> frutilla, pollo furay, queso crema; 10 <span class="parentesis">(env. Pollo empanizado)</span> champiñón, queso crema, cebollín; 10 <span class="parentesis">(env. Palta)</span> pollo teriyaki, queso crema, cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$28.400</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </details>
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo">Del mar</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Carpaccios y Tiraditos</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Carpaccio de Salmón</h5>
+                          <p class="tarjeta__detalle">Finas y frescas láminas de salmón acompañado de alcaparras y queso parmesano rallado bañado en deliciosa limoneta con toques de aceite de oliva sal y pimienta</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.600</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Carpaccio de Pulpo</h5>
+                          <p class="tarjeta__detalle">Finas y frescas láminas de pulpo acompañado de alcaparras y queso parmesano rallado bañado en deliciosa limoneta con toques de aceite de oliva sal y pimienta</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tiradito de Salmón Nikkei</h5>
+                          <p class="tarjeta__detalle">Frescas láminas de salmón bañado con deliciosa salsa de pulpa de maracuyá, limón coronado con crujiente camote hilo</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tuna Nikkei</h5>
+                          <p class="tarjeta__detalle">Cortes de atún sellado acompañados de pasta de rocoto ahumada sin picante con chalaquita crocante de cebolla morada, cilantro, limón y maíz canchita</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tataki de Salmón</h5>
+                          <p class="tarjeta__detalle">Sashimi de fresco salmón sellado en una costra de semillas de sésamo acompañada de deliciosa salsa ponzu <span class="parentesis">(salsa de soya cítrica)</span></p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sake al Oil</h5>
+                          <p class="tarjeta__detalle">Tiradito de fresco salmón bañado con una salsa de soya cítrica con aceite de sésamo ahumado, cebollín y palta coronado de crocante harusame</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tiradito Tako al Olivo</h5>
+                          <p class="tarjeta__detalle">Deliciosas láminas de pulpo alineado con limón aceite de olivo bañado en salsa de olivo con toques de cilantro acompañado de crujiente galleta de masa huantan y cubos de cremosa palta</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$10.500</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Ceviches</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Ceviche Peruano</h5>
+                          <p class="tarjeta__detalle">Pescado con leche de tigre acompañado de cebolla morada en pluma, maíz cancha, camote y choclo</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Ceviche Carretillero</h5>
+                          <p class="tarjeta__detalle">Fresco pescado blanco con leche de tigre acompañado de chicharrón de mariscos <span class="parentesis">(pulpo, camarón, calamar)</span> con cebolla morada, maíz cancha, camote, choclo</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Ceviche Mixto</h5>
+                          <p class="tarjeta__detalle">Pescado acompañado de mix de marisco <span class="parentesis">(pulpo, camarón, calamar)</span> con leche de tigre, cebolla morada, maíz cancha, camote y choclo</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Ceviche Shine</h5>
+                          <p class="tarjeta__detalle">Mix de pescado, pulpo, salmón y camarón acompañado de cebolla morada pluma, toques de pimentón</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$11.900</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </details>
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo">Platos</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Gohan</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Gohan Vegetariano</h5>
+                          <p class="tarjeta__detalle">Plato japonés que tiene de ingredientes arroz de sushi, champiñones salteados, palmitos, palta, queso crema, trozos de morrón, semillas de sésamo y cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$8.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Gohan Shine</h5>
+                          <p class="tarjeta__detalle">Plato japonés que tiene como ingredientes salmón, camarón furay, queso crema, arroz de sushi, cebollín, palta y sésamo tostado</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Gohan Furay</h5>
+                          <p class="tarjeta__detalle">Plato japonés que tiene de ingredientes arroz de sushi, pollo empanizado, queso crema, palta hass y papas hilo</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Gohan Teriyaki</h5>
+                          <p class="tarjeta__detalle">Plato japonés que tiene como ingredientes pollo teriyaki, queso crema con toques de sésamo, palta hass, cebollín</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$9.300</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Otros</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Nuggets Pollo <span class="parentesis">(6 unid)</span></h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$3.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Papas Fritas <span class="parentesis">(250g)</span></h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$3.500</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Fajitas</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Fajita Furay</h5>
+                          <p class="tarjeta__detalle">Masa de fajita rellena de pollo crujiente, queso amarillo rallado, tomate y palta hass</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Fajita Mechada</h5>
+                          <p class="tarjeta__detalle">Masa de fajita rellena de carne mechada, cebolla salteada, lechuga y palta hass</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.500</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </details>
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo">Bebidas y extras</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Refrescos</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Bebidas Lata <span class="parentesis">(350cc)</span></h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$2.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Agua Mineral Mediana</h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$1.600</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Extras</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Salsa Soya o Teriyaki</h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$750</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Salsa Acevichada o Spicy <span class="parentesis">(picante)</span></h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$950</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Salsa Maracuyá, Ponzu, Frutilla</h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Palillos</h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$100</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Ayuda Palito</h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Wasabi o Jengibre</h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$500</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </details>
+            </div>
+          </details>
+          <details class="acordeon" id="burgers">
+            <summary class="acordeon__cabecera">
+              <h2 class="acordeon__titulo">Burgers</h2>
+              <span class="acordeon__flecha" aria-hidden="true"></span>
+            </summary>
+
+            <div class="acordeon__cuerpo">
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo grupo__titulo--badge badge">Hamburguesas</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <div class="grilla grilla--dos">
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Classic House</h5>
+                      <p class="tarjeta__detalle">160gr hamburguesa de carne, queso mantecoso, aros de cebolla morada, tomate, tocino crocante, lechuga, salsa BBQ, salsa alioli</p>
+                      <p class="tarjeta__incluye">Incluye: Porción de papas fritas</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.900</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Simple Burger</h5>
+                      <p class="tarjeta__detalle">160gr hamburguesa de carne, queso cheddar, tomate, lechuga, palta hass</p>
+                      <p class="tarjeta__incluye">Incluye: Porción de papas fritas</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.700</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Parrillon Burger</h5>
+                      <p class="tarjeta__detalle">160gr hamburguesa de carne <span class="parentesis">(bañada en chimichurri)</span>, tomate, queso mantecoso, palta hass, jamón, huevo, ají parrillero</p>
+                      <p class="tarjeta__incluye">Incluye: Porción de papas fritas</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$7.000</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Crunch Burger</h5>
+                      <p class="tarjeta__detalle">Crocante pollo apanado, queso cheddar, pepinillos, aro de cebolla morada, tomate, lechuga, salsa alioli</p>
+                      <p class="tarjeta__incluye">Incluye: Porción de papas fritas</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.800</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Burger Andina</h5>
+                      <p class="tarjeta__detalle">160gr hamburguesa de carne, queso mantecoso, cebolla frita, tomate, tocino, huevo frito, salsa andina</p>
+                      <p class="tarjeta__incluye">Incluye: Porción de papas fritas</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$7.000</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Champiburger</h5>
+                      <p class="tarjeta__detalle">160gr hamburguesa de carne, queso cheddar, champiñones salteados, palta hass, tocino, cebolla blanca caramelizada, salsa BBQ</p>
+                      <p class="tarjeta__incluye">Incluye: Porción de papas fritas</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.800</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Big Burger</h5>
+                      <p class="tarjeta__detalle">Doble hamburguesa de carne <span class="parentesis">(160gr c/u)</span>, queso cheddar, tomate, pepinillos, salsa BBQ con trozos de tocino y cebolla caramelizada</p>
+                      <p class="tarjeta__incluye">Incluye: Porción de papas fritas</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$8.800</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Chalaca Burger</h5>
+                      <p class="tarjeta__detalle">160gr hamburguesa de carne, queso cheddar, lechuga, fresca chalaquita de verduras, salsa alioli</p>
+                      <p class="tarjeta__incluye">Incluye: Porción de papas fritas</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.500</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Onioncrunch Burger</h5>
+                      <p class="tarjeta__detalle">160gr hamburguesa de carne, queso cheddar, aros de cebolla crocantes, tocino, huevo frito, lechuga, tomate, salsa tártara</p>
+                      <p class="tarjeta__incluye">Incluye: Porción de papas fritas</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$7.000</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Coleslaw Burger</h5>
+                      <p class="tarjeta__detalle">160gr hamburguesa de carne, queso cheddar, tomate, lechuga, ensalada coleslaw, salsa BBQ, salsa alioli</p>
+                      <p class="tarjeta__incluye">Incluye: Porción de papas fritas</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$6.800</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Shine Burger</h5>
+                      <p class="tarjeta__detalle">Doble hamburguesa de carne <span class="parentesis">(160gr c/u)</span>, doble queso cheddar, tomate, tocino, palta hass, huevo frito, salsa del chef</p>
+                      <p class="tarjeta__incluye">Incluye: Porción de papas fritas</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$9.000</span>
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </details>
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo grupo__titulo--badge badge">Salsas</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <div class="grilla grilla--dos">
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Salsa BBQ</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$700</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Salsa Ají Parrillero</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$700</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Salsa Alioli</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$700</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Salsa Spicy</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$700</span>
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </details>
+          <details class="acordeon" id="bar">
+            <summary class="acordeon__cabecera">
+              <h2 class="acordeon__titulo">Tragos</h2>
+              <span class="acordeon__flecha" aria-hidden="true"></span>
+            </summary>
+
+            <div class="acordeon__cuerpo">
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo">Coctelería</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Mojitos</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mojito Cubano</h5>
+                          <p class="tarjeta__detalle">Hierba buena macerada con syrup y jugo de limon, ron blanco y gaseosa</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mojito Sabores</h5>
+                          <p class="tarjeta__detalle">Hierba buena macerada con syrup y jugo a eleccion <span class="parentesis">(mango, maracuya, frutilla)</span> ron blanco y agua gasificada</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mojito Jagermeister</h5>
+                          <p class="tarjeta__detalle">Hierba buena macerada con syrup y jugo de limon, toques de ron, jagermeister y agua gasificada</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mojito Beer</h5>
+                          <p class="tarjeta__detalle">Hierba buena macerada con syrup y jugo de limon, coronado con un botellin de cerveza, toques de ron y agua gasificada</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.590</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mojito Jack's</h5>
+                          <p class="tarjeta__detalle">Hierba buena macerada con syrup y jugo de limon, jack daniel's y agua gasificada</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mojito Espumante Maracuyá</h5>
+                          <p class="tarjeta__detalle">Hierba buena macerada con syrup y jugo de maracuya, espumante y agua gasificada</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mojito Aperol</h5>
+                          <p class="tarjeta__detalle">Hierba buena macerada con azucar flor y jugo de limon, aperol y agua gasificada</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mojito Ramazzotti</h5>
+                          <p class="tarjeta__detalle">Hierba buena macerada con azucar flor y jugo de limon, ramazzotti y agua gasificada</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.500</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Coctelería de la casa</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Irodori</h5>
+                          <p class="tarjeta__detalle">Campari, Licor de Casis, Zumo maracuya, syrup de maracuya, espumante y licor de melon</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.590</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mitsu</h5>
+                          <p class="tarjeta__detalle">Whysky, Fire Ball, zumo naraja y limon, syrup de miel especiada, top de Tonica</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.990</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Shine Fresh</h5>
+                          <p class="tarjeta__detalle">Zumo de mango, maracuya, limon, frutilla, jengibre, syrup naranja y crema de coco</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.690</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Kame Oshi</h5>
+                          <p class="tarjeta__detalle">Jagermeister, frangelico, zumo de limon y mango, syrup de miel especiada</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.700</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Yukanna</h5>
+                          <p class="tarjeta__detalle">Curazao, amaretto, gin, zumo de limon, piña, surup naranja jengibre, crema de coco</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.290</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Cocktails</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Aperol Spiritz</h5>
+                          <p class="tarjeta__detalle">Aperol, espumante, soda</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Aperitivo Ramazzotti</h5>
+                          <p class="tarjeta__detalle">Ramazzotti, espumante, soda</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Caipirinha</h5>
+                          <p class="tarjeta__detalle">Cachaza, limon, azucar flor y hielo</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Borgoña</h5>
+                          <p class="tarjeta__detalle">Triple sec, granadina, licor de arándanos, jugo de naranja</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$4.200</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Negroni</h5>
+                          <p class="tarjeta__detalle">Gin, vermut rosso, campari</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Old Fashioned</h5>
+                          <p class="tarjeta__detalle">Whisky, azúcar, amargo de angostura</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.400</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Clavo Oxidado</h5>
+                          <p class="tarjeta__detalle">Whisky, Drambuie, clavo de olor</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.200</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Daikiri Sabores</h5>
+                          <p class="tarjeta__detalle">Ron, pulpa a eleccion, limon, azucar flor</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.600</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Manhattan</h5>
+                          <p class="tarjeta__detalle">Whisky, vermut rosso, amargo de angostura</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.600</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Chilcano</h5>
+                          <p class="tarjeta__detalle">Pisco, zumo de limon, ginger ale</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Jagger Mash</h5>
+                          <p class="tarjeta__detalle">Jagermeister, maracuya, vodka, syrup, limón</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tom Collins</h5>
+                          <p class="tarjeta__detalle">Gin, limón, jarabe simple, agua gasificada</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.200</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Sangría</h5>
+                          <p class="tarjeta__detalle">Cointreau, vino, manzana picada, jarabe, limón, vodka frambuesa</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.600</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Amor en Llamas</h5>
+                          <p class="tarjeta__detalle">Piña, naranja, syrup, pisco, vodka, gin</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.600</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Piña Colada</h5>
+                          <p class="tarjeta__detalle">Ron blanco, jugo de piña, crema de coco lopez, coco rallado</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.600</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Piña Colada Sabores</h5>
+                          <p class="tarjeta__detalle">Mango, frutilla, maracuya</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.900</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Sour</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Pisco Sour</h5>
+                          <p class="tarjeta__detalle">Limón de pica sutil, syrup, pisco mistral 35</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Jengibre Sour</h5>
+                          <p class="tarjeta__detalle">Limón de pica, pisco mistral 35, syrup y toques de jengibre</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mango Sour</h5>
+                          <p class="tarjeta__detalle">Jugo de mango, pisco mistral 35, syrup y jugo de limón</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.000</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Vodka Sour</h5>
+                          <p class="tarjeta__detalle">Vodka, jugo de limón y syrup</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.500</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </details>
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo grupo__titulo--badge badge">Cervezas</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <div class="grilla grilla--dos">
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Cerveza Botellín Variedades</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$3.500</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Schop Stella Artois</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$4.800</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Schop Cusqueña</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$4.800</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Schop Royal</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$4.600</span>
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </details>
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo">Destilados</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Ron</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Ron Havana Especial</h5>
+                          <p class="tarjeta__detalle">Lata 350cc a elección</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Ron Havana Reserva</h5>
+                          <p class="tarjeta__detalle">Lata 350cc a elección</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.800</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Gin</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Gin Verano</h5>
+                          <p class="tarjeta__detalle">Gin, syrup, limon, red bull sandia</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Gin Tropical</h5>
+                          <p class="tarjeta__detalle">Gin, maracuya, syrup, red bull</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Gin Tonic</h5>
+                          <p class="tarjeta__detalle">Gin, agua tonica</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Beefeater</h5>
+                          <p class="tarjeta__detalle">Gin + lata de bebida</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.900</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Beefeater Pink</h5>
+                          <p class="tarjeta__detalle">Gin pink + lata de bebida</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.000</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Whisky</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Johnny Walker Red Label</h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Johnny Walker Black Label</h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Jack Daniels 7</h5>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$7.500</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Pisco</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mistral 35°</h5>
+                          <p class="tarjeta__detalle">Todos vienen con lata 350cc a elección</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.100</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mistral 40°</h5>
+                          <p class="tarjeta__detalle">Todos vienen con lata 350cc a elección</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Mistral Nobel</h5>
+                          <p class="tarjeta__detalle">Todos vienen con lata 350cc a elección</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Alto del Carmen 35°</h5>
+                          <p class="tarjeta__detalle">Todos vienen con lata 350cc a elección</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.200</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Alto del Carmen 40°</h5>
+                          <p class="tarjeta__detalle">Todos vienen con lata 350cc a elección</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Alto del Carmen <span class="parentesis">(Etiqueta Blanca)</span></h5>
+                          <p class="tarjeta__detalle">Todos vienen con lata 350cc a elección</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$6.500</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="subgrupo">
+                    <summary class="subgrupo__cabecera">
+                      <h4 class="subcategoria badge">Tequila</h4>
+                      <span class="subgrupo__flecha" aria-hidden="true"></span>
+                    </summary>
+                    <div class="subgrupo__cuerpo">
+                      <div class="grilla grilla--dos">
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tequila Sunrise</h5>
+                          <p class="tarjeta__detalle">Tequila, zumo de naranja, granadina</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.500</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tequila Margarita</h5>
+                          <p class="tarjeta__detalle">Tequila, triple sec, jugo de limón y goma</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.800</span>
+                          </p>
+                        </article>
+                        <article class="tarjeta">
+                          <h5 class="tarjeta__titulo">Tequila Blue</h5>
+                          <p class="tarjeta__detalle">Tequila, triple sec, jugo de limón y goma</p>
+                          <p class="tarjeta__pie">
+                            <span class="tarjeta__precio">$5.800</span>
+                          </p>
+                        </article>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </details>
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo grupo__titulo--badge badge">Shots</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <div class="grilla grilla--dos">
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Tequila</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$3.000</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Jagermeister</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$3.000</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Whisky</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$3.000</span>
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </details>
+              <details class="grupo">
+                <summary class="grupo__cabecera">
+                  <h3 class="grupo__titulo grupo__titulo--badge badge">Sin alcohol</h3>
+                  <span class="grupo__flecha" aria-hidden="true"></span>
+                </summary>
+                <div class="grupo__cuerpo">
+                  <div class="grilla grilla--dos">
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Jugos Naturales</h5>
+                      <p class="tarjeta__detalle">Mango, maracuya, frutilla, piña</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$4.300</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Limonada</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$3.500</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Bebidas Latas <span class="parentesis">(350cc)</span></h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$2.400</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Agua Mineral</h5>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$1.900</span>
+                      </p>
+                    </article>
+                    <article class="tarjeta">
+                      <h5 class="tarjeta__titulo">Jugos Botellín <span class="parentesis">(300cc)</span></h5>
+                      <p class="tarjeta__detalle">Naranja, piña, durazno, frutilla</p>
+                      <p class="tarjeta__pie">
+                        <span class="tarjeta__precio">$1.900</span>
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="contenedor footer__interior">
+        <div>
+          <img
+            class="footer__logo"
+            src="../static/assets/logo.webp"
+            alt="Shine Sushi"
+            width="800"
+            height="217"
+          />
+          <p class="footer__credito">Sushi en Iquique y Alto Hospicio desde 2014.</p>
+        </div>
+
+        <div class="footer__redes">
+          <a class="footer__red" href="https://www.instagram.com/shinesushi/">Instagram</a>
+          <a
+            class="footer__red"
+            href="https://www.facebook.com/search/top?q=Shine%20Sushi%20Alto%20Hospicio"
+            >Facebook Alto Hospicio</a
+          >
+          <a
+            class="footer__red"
+            href="https://www.facebook.com/search/top?q=Shine%20Sushi%20Iquique"
+            >Facebook Iquique</a
+          >
+        </div>
+      </div>
+
+      <div class="contenedor">
+        <div class="footer__legal">
+          <span>Shine Sushi © 2026</span>
+          <a href="terminos-y-condiciones.html">Términos y condiciones</a>
+          <a href="reglamento-interno.html">Reglamento interno</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="dialogo" id="dialogo-sucursal" aria-labelledby="dialogo-titulo">
+      <div class="dialogo__panel">
+        <button
+          class="dialogo__cerrar"
+          type="button"
+          data-cerrar-sucursal
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+
+        <h2 class="dialogo__titulo" id="dialogo-titulo">Elija una sucursal</h2>
+
+        <div class="dialogo__opciones">
+          <a class="opcion-sucursal opcion-sucursal--rojo" href="https://wa.me/56572443313">
+            Whatsapp Playa Brava
+          </a>
+
+          <a class="opcion-sucursal opcion-sucursal--azul" href="https://wa.me/56222267828">
+            WhatsApp Baquedano
+          </a>
+
+          <a class="opcion-sucursal opcion-sucursal--blanco" href="https://wa.me/56572790722">
+            Whatsapp Alto Hospicio
+          </a>
+        </div>
+      </div>
+    </dialog>
+
+    <script type="module" src="../static/js/app.js"></script>
+  </body>
+</html>

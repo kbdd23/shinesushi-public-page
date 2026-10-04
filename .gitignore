@@ -1,0 +1,16 @@
+*.txt
+*.json
+*.md
+docs/
+
+.env
+.env.*
+*.bak
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+.vscode/
+.idea/
+*.swp
