@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#232323" />
+  <g fill="none" stroke="#3a3a3a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="118" y="92" width="164" height="116" rx="14" />
+    <circle cx="200" cy="150" r="34" />
+    <path d="M118 92 L162 136" />
+  </g>
+  <text
+    x="200"
+    y="248"
+    text-anchor="middle"
+    font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+    font-size="19"
+    font-weight="600"
+    fill="#6d6d6d"
+  >Foto pendiente</text>
+</svg>

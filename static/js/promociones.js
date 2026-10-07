@@ -37,7 +37,7 @@ function pintarPromocion(dia) {
   const imagenDialogo = document.getElementById("flyer-imagen");
 
   if (etiqueta) {
-    etiqueta.textContent = (esHoy ? "Hoy · " : "") + promocion.dia;
+    etiqueta.textContent = esHoy ? "HOY" : promocion.dia;
   }
   if (descuento) {
     descuento.textContent = promocion.descuento;

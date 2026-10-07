@@ -110,6 +110,57 @@
         </div>
       </section>
 
+      <section class="seccion promociones" id="promociones">
+        <div class="contenedor">
+          <h2 class="promociones__caption">PROMOCIONES SEMANALES</h2>
+
+          <p class="promociones__bajada">¡Aprovecha nuestras promociones especiales!</p>
+
+          <button class="promocion" type="button" data-abrir-flyer>
+            <span class="promocion__texto">
+              <span class="promocion__descuento" id="promocion-descuento">—</span>
+              <span class="promocion__etiqueta" id="promocion-etiqueta">Hoy</span>
+              <span class="promocion__detalle" id="promocion-detalle"></span>
+            </span>
+
+            <span class="promocion__flyer">
+              <img
+                class="promocion__imagen"
+                id="promocion-imagen"
+                src="static/assets/promociones/lunes.webp"
+                alt=""
+                width="516"
+                height="558"
+              />
+            </span>
+          </button>
+
+          <div class="dias" id="dias" role="tablist" aria-label="Elegir el día de la semana">
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="1">Lun</button>
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="2">Mar</button>
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="3">Mié</button>
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="4">Jue</button>
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="5">Vie</button>
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="6">Sáb</button>
+            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="0">Dom</button>
+          </div>
+
+          <p class="promocion__legal">
+            Válida solo con pago en efectivo o transferencia. No acumulable con otras promociones.
+          </p>
+
+          <noscript>
+            <ul class="promocion__lista">
+              <li>Lunes: 4x3 / 3x2 en Roll de Carta</li>
+              <li>Martes: -10% en Tiraditos y Ceviche</li>
+              <li>Miércoles y Jueves: -15% en Roll de Carta, Arma Tu Roll</li>
+              <li>Viernes y Sábado: -10% en Roll de Carta</li>
+              <li>Domingo: -10% en Tablas</li>
+            </ul>
+          </noscript>
+        </div>
+      </section>
+
       <section class="seccion cartas" id="cartas">
         <div class="contenedor">
           <a class="banda" href="menu.html#sushi">
@@ -153,56 +204,6 @@
         </div>
       </section>
 
-      <section class="seccion promociones" id="promociones">
-        <div class="contenedor">
-          <h2 class="promociones__caption">DESCUENTOS DIARIOS</h2>
-
-          <p class="promociones__bajada">¡Aprovecha nuestras promociones especiales!</p>
-
-          <button class="promocion" type="button" data-abrir-flyer>
-            <span class="promocion__texto">
-              <span class="promocion__etiqueta" id="promocion-etiqueta">Promoción de hoy</span>
-              <span class="promocion__descuento" id="promocion-descuento">—</span>
-              <span class="promocion__detalle" id="promocion-detalle"></span>
-            </span>
-
-            <span class="promocion__flyer">
-              <img
-                class="promocion__imagen"
-                id="promocion-imagen"
-                src="static/assets/promociones/lunes.webp"
-                alt=""
-                width="516"
-                height="558"
-              />
-            </span>
-          </button>
-
-          <div class="dias" id="dias" role="tablist" aria-label="Elegir el día de la semana">
-            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="1">Lun</button>
-            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="2">Mar</button>
-            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="3">Mié</button>
-            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="4">Jue</button>
-            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="5">Vie</button>
-            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="6">Sáb</button>
-            <button class="dia" type="button" role="tab" aria-selected="false" data-dia="0">Dom</button>
-          </div>
-
-          <p class="promocion__legal">
-            Válida solo con pago en efectivo o transferencia. No acumulable con otras promociones.
-          </p>
-
-          <noscript>
-            <ul class="promocion__lista">
-              <li>Lunes: 4x3 / 3x2 en Roll de Carta</li>
-              <li>Martes: -10% en Tiraditos y Ceviche</li>
-              <li>Miércoles y Jueves: -15% en Roll de Carta, Arma Tu Roll</li>
-              <li>Viernes y Sábado: -10% en Roll de Carta</li>
-              <li>Domingo: -10% en Tablas</li>
-            </ul>
-          </noscript>
-        </div>
-      </section>
     </main>
 
     <footer class="footer">
