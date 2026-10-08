@@ -328,7 +328,7 @@ button {
 .hero__fondo {
   position: absolute;
   inset: 0;
-  background-image: url("../assets/hero-tako.webp");
+  background-image: url("../assets/hero/hero-tako.webp");
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -702,7 +702,7 @@ button {
   border: 1px solid var(--borde);
   border-radius: var(--radio);
   background-color: var(--superficie);
-  background-image: url("../assets/black_background.png");
+  background-image: url("../assets/fondos/black_background.png");
   overflow: hidden;
   scroll-margin-top: calc(var(--altura-header) + 20px);
 }
@@ -835,6 +835,7 @@ button {
   border: 1px solid var(--borde);
   border-radius: var(--radio);
   background-color: var(--superficie);
+  cursor: pointer;
   scroll-snap-align: start;
   transition: border-color var(--transicion), transform var(--transicion);
 }
@@ -1284,6 +1285,32 @@ button {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 22px;
+}
+
+/* ---------------------------------------------------- detalle de producto */
+
+.dialogo--producto .detalle__titulo {
+  font-size: 30px;
+}
+
+.dialogo--producto .detalle__foto {
+  margin-top: 16px;
+}
+
+.detalle__descripcion {
+  margin-top: 24px;
+  font-size: 21.2px;
+  line-height: 1.5;
+  color: var(--texto);
+}
+
+.detalle__precio {
+  display: block;
+  margin-top: 16px;
+  font-family: var(--fuente-titulo);
+  font-size: 28.4px;
+  font-weight: 800;
+  color: var(--naranja);
 }
 
 /* ----------------------------------------------------- flyer en dialogo */
