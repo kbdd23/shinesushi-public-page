@@ -1,4 +1,4 @@
-/* Detalle de sucursal: un solo <dialog> que se rellena con la tarjeta pulsada. */
+/* Detalle de sucursal: un solo <dialog> que se rellena con la información de la tarjeta pulsada. */
 
 export function iniciarDetalleSucursal() {
   const dialogo = document.getElementById("dialogo-detalle-sucursal");

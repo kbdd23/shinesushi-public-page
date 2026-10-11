@@ -1,4 +1,4 @@
-/* Selector de cartas descargables: abre y cierra su <dialog>. */
+/* Selector de cartas descargables: abre y cierra su <dialog>. (esto es para el menú de opciones de descargas, las cartas disponibles.) */
 
 export function iniciarCartas() {
   const dialogo = document.getElementById("dialogo-cartas");
