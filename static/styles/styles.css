@@ -1378,6 +1378,60 @@ button {
   margin-top: 22px;
 }
 
+/* Vista previa del mapa: el iframe no recibe gestos, el enlace que lo tapa se
+   lleva el click y abre Google Maps en otra pestana. */
+.detalle__mapa {
+  position: relative;
+  height: 220px;
+  margin-top: 22px;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  background-color: var(--superficie-alta);
+  overflow: hidden;
+}
+
+.detalle__mapa[hidden] {
+  display: none;
+}
+
+.detalle__mapa-marco {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  pointer-events: none;
+}
+
+.detalle__mapa-enlace {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 12px;
+  transition: background-color var(--transicion);
+}
+
+.detalle__mapa-enlace:hover,
+.detalle__mapa-enlace:focus-visible {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.detalle__mapa-texto {
+  padding: 7px 14px;
+  border-radius: 999px;
+  background-color: rgba(13, 13, 13, 0.84);
+  font-family: var(--fuente-titulo);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--naranja);
+}
+
 /* ---------------------------------------------------- detalle de producto */
 
 .dialogo--producto .detalle__titulo {

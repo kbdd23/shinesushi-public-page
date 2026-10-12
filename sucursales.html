@@ -95,7 +95,12 @@
               ></button>
 
               <ul class="carrusel__pista">
-                <li class="carrusel__celda sucursal">
+                <li
+                  class="carrusel__celda sucursal"
+                  data-coordenadas="-20.2506561,-70.1369835"
+                  data-mapa-consulta="Av. Arturo Prat 3286, Iquique, Chile"
+                  data-mapa-enlace="https://www.google.com/maps/place/Av.+Arturo+Prat+3286/@-20.2506561,-70.1369835,17z/data=!4m6!3m5!1s0x9152147a54a2e289:0xfafa69335016f513!8m2!3d-20.2506561!4d-70.1369835!16s%2Fg%2F11h01x3mgb"
+                >
                   <img
                     class="sucursal__foto"
                     src="static/assets/sucursales/playabrava.png"
@@ -126,7 +131,11 @@
                   </div>
                 </li>
 
-                <li class="carrusel__celda sucursal">
+                <li
+                  class="carrusel__celda sucursal"
+                  data-coordenadas="-20.2713410,-70.1046707"
+                  data-mapa-consulta="Los Cóndores 3110, Alto Hospicio, Chile"
+                >
                   <img
                     class="sucursal__foto"
                     src="static/assets/sucursales/altohospicio.png"
@@ -157,7 +166,11 @@
                   </div>
                 </li>
 
-                <li class="carrusel__celda sucursal">
+                <li
+                  class="carrusel__celda sucursal"
+                  data-coordenadas="-20.2197429,-70.1522836"
+                  data-mapa-consulta="Baquedano 1220, Iquique, Chile"
+                >
                   <img
                     class="sucursal__foto"
                     src="static/assets/sucursales/baquedano.jpg"
@@ -201,7 +214,12 @@
           <h2 class="sucursales__otras-titulo">Otras sucursales</h2>
 
           <ul class="sucursales__otras">
-            <li class="sucursales__otra sucursal">
+            <li
+              class="sucursales__otra sucursal"
+              data-coordenadas="-20.2327283,-70.1427897"
+              data-mapa-consulta="Av. Héroes de la Concepción 2555, 1110003 Iquique, Tarapacá"
+              data-mapa-enlace="https://www.google.com/maps/place/Mall+Plaza+Iquique/@-20.2327283,-70.1427897,17z/data=!4m6!3m5!1s0x915215bc3efe03d9:0xe1c9577a6f8ed42c!8m2!3d-20.2327283!4d-70.1427897!16s%2Fg%2F11bcf30ysz"
+            >
               <img
                 class="sucursal__foto"
                 src="static/assets/sucursales/mallplaza.png"
@@ -226,7 +244,12 @@
               </div>
             </li>
 
-            <li class="sucursales__otra sucursal">
+            <li
+              class="sucursales__otra sucursal"
+              data-coordenadas="-20.2055071,-70.1384475"
+              data-mapa-consulta="Mall Zofri"
+              data-mapa-enlace="https://www.google.com/maps/place/Mall+Zofri/@-20.2055071,-70.1384475,17z/data=!4m6!3m5!1s0x915216a618afce3f:0x9fd6d76340bc46c9!8m2!3d-20.2055071!4d-70.1384475!16s%2Fg%2F11b7tvrtp7"
+            >
               <img
                 class="sucursal__foto"
                 src="static/assets/sucursales/mallzofri.png"
@@ -352,6 +375,25 @@
             rel="noopener"
             >WhatsApp</a
           >
+        </div>
+
+        <div class="detalle__mapa" id="detalle-mapa" hidden>
+          <iframe
+            class="detalle__mapa-marco"
+            id="detalle-mapa-marco"
+            title="Vista previa de la ubicación en Google Maps"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <a
+            class="detalle__mapa-enlace"
+            id="detalle-mapa-enlace"
+            href=""
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="detalle__mapa-texto">Ver en Google Maps</span>
+          </a>
         </div>
       </div>
     </dialog>
