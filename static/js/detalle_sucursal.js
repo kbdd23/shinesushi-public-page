@@ -44,20 +44,27 @@ export function iniciarDetalleSucursal() {
     acciones.hidden = !enlaceFono && !enlaceWhatsapp;
   }
 
-  document.querySelectorAll("[data-abrir-detalle]").forEach(function (boton) {
-    boton.addEventListener("click", function () {
-      if (dialogo.open) {
-        return;
-      }
+  /* Delegado en el documento en vez de atar boton por boton: el carrusel de
+     sucursales del landing clona sus celdas despues de que este modulo arranca,
+     y esos clones tambien tienen que abrir el dialogo. Atados de uno en uno,
+     los clones quedaban muertos. */
+  document.addEventListener("click", function (evento) {
+    const boton = evento.target.closest("[data-abrir-detalle]");
+    if (!boton) {
+      return;
+    }
 
-      const tarjeta = boton.closest(".sucursal");
-      if (!tarjeta) {
-        return;
-      }
+    if (dialogo.open) {
+      return;
+    }
 
-      rellenar(tarjeta);
-      dialogo.showModal();
-    });
+    const tarjeta = boton.closest(".sucursal");
+    if (!tarjeta) {
+      return;
+    }
+
+    rellenar(tarjeta);
+    dialogo.showModal();
   });
 
   document.querySelectorAll("[data-cerrar-detalle]").forEach(function (boton) {

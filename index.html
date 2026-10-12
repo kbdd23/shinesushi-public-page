@@ -204,6 +204,187 @@
         </div>
       </section>
 
+      <section class="seccion sucursales-destacadas" id="sucursales">
+        <div class="contenedor">
+          <div class="sucursales-destacadas__encabezado">
+            <div>
+              <h2 class="sucursales-destacadas__caption">NUESTRAS SUCURSALES</h2>
+              <p class="sucursales-destacadas__bajada">Cinco locales en Iquique y Alto Hospicio.</p>
+            </div>
+
+            <button
+              class="interruptor"
+              type="button"
+              role="switch"
+              aria-checked="true"
+              aria-controls="pista-sucursales"
+            >
+              <span class="interruptor__riel" aria-hidden="true"></span>
+              <span class="interruptor__texto">Avance automático</span>
+            </button>
+          </div>
+
+          <div class="carrusel carrusel--sucursales">
+            <div class="carrusel__ventana">
+              <button
+                class="carrusel__flecha carrusel__flecha--izq"
+                type="button"
+                aria-label="Ver sucursales anteriores"
+                hidden
+              ></button>
+
+              <ul class="carrusel__pista" id="pista-sucursales" data-carrusel-bucle="4000">
+                <li class="carrusel__celda sucursal">
+                  <img
+                    class="sucursal__foto"
+                    src="static/assets/sucursales/playabrava.png"
+                    alt="Fachada de la sucursal Playa Brava de Shine Sushi"
+                    width="594"
+                    height="300"
+                    loading="lazy"
+                  />
+
+                  <div class="sucursal__cuerpo">
+                    <h3 class="sucursal__zona">
+                      <button class="sucursal__detalle" type="button" data-abrir-detalle>
+                        Iquique
+                      </button>
+                    </h3>
+                    <p class="sucursal__direccion">Av. Arturo Prat 3286</p>
+
+                    <div class="sucursal__acciones">
+                      <a
+                        class="sucursal__accion sucursal__accion--whatsapp"
+                        href="https://wa.me/56572443313"
+                        target="_blank"
+                        rel="noopener"
+                        >WhatsApp</a
+                      >
+                      <a class="sucursal__accion" href="tel:+56572443313">57 2 443313</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="carrusel__celda sucursal">
+                  <img
+                    class="sucursal__foto"
+                    src="static/assets/sucursales/altohospicio.png"
+                    alt="Fachada de la sucursal Alto Hospicio de Shine Sushi"
+                    width="529"
+                    height="433"
+                    loading="lazy"
+                  />
+
+                  <div class="sucursal__cuerpo">
+                    <h3 class="sucursal__zona">
+                      <button class="sucursal__detalle" type="button" data-abrir-detalle>
+                        Alto Hospicio
+                      </button>
+                    </h3>
+                    <p class="sucursal__direccion">Los Cóndores 3110</p>
+
+                    <div class="sucursal__acciones">
+                      <a
+                        class="sucursal__accion sucursal__accion--whatsapp"
+                        href="https://wa.me/56572790722"
+                        target="_blank"
+                        rel="noopener"
+                        >WhatsApp</a
+                      >
+                      <a class="sucursal__accion" href="tel:+56572790722">57 2 790722</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="carrusel__celda sucursal">
+                  <img
+                    class="sucursal__foto"
+                    src="static/assets/sucursales/baquedano.jpg"
+                    alt="Fachada de la sucursal Baquedano de Shine Sushi"
+                    width="400"
+                    height="300"
+                    loading="lazy"
+                  />
+
+                  <div class="sucursal__cuerpo">
+                    <h3 class="sucursal__zona">
+                      <button class="sucursal__detalle" type="button" data-abrir-detalle>
+                        Iquique
+                      </button>
+                    </h3>
+                    <p class="sucursal__direccion">Baquedano 1220</p>
+
+                    <div class="sucursal__acciones">
+                      <a
+                        class="sucursal__accion sucursal__accion--whatsapp"
+                        href="https://wa.me/56222267828"
+                        target="_blank"
+                        rel="noopener"
+                        >WhatsApp</a
+                      >
+                      <a class="sucursal__accion" href="tel:+56222267828">57 2 22267828</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="carrusel__celda sucursal">
+                  <img
+                    class="sucursal__foto"
+                    src="static/assets/sucursales/mallplaza.png"
+                    alt="Fachada de Shine Sushi en Mall Plaza"
+                    width="374"
+                    height="410"
+                    loading="lazy"
+                  />
+
+                  <div class="sucursal__cuerpo">
+                    <h3 class="sucursal__zona">
+                      <button class="sucursal__detalle" type="button" data-abrir-detalle>
+                        Mall Plaza
+                      </button>
+                    </h3>
+                    <p
+                      class="sucursal__direccion"
+                      data-direccion-completa="Av. Héroes de la Concepción 2555 · Local 2017"
+                    >
+                      Local 2017
+                    </p>
+                  </div>
+                </li>
+                <li class="carrusel__celda sucursal">
+                  <img
+                    class="sucursal__foto"
+                    src="static/assets/sucursales/mallzofri.png"
+                    alt="Fachada de Shine Sushi en Mall Zofri"
+                    width="249"
+                    height="336"
+                    loading="lazy"
+                  />
+
+                  <div class="sucursal__cuerpo">
+                    <h3 class="sucursal__zona">
+                      <button class="sucursal__detalle" type="button" data-abrir-detalle>
+                        Mall Zofri
+                      </button>
+                    </h3>
+                    <p
+                      class="sucursal__direccion"
+                      data-direccion-completa="EDIFICIO CONVENCIONES S/N RECINTO AMURALLADO · Local 302"
+                    >
+                      Local 302
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+              <button
+                class="carrusel__flecha carrusel__flecha--der"
+                type="button"
+                aria-label="Ver más sucursales"
+                hidden
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer class="footer">
@@ -282,6 +463,41 @@
         width="516"
         height="558"
       />
+    </dialog>
+
+    <dialog
+      class="dialogo dialogo--detalle"
+      id="dialogo-detalle-sucursal"
+      aria-labelledby="detalle-titulo"
+    >
+      <div class="dialogo__panel">
+        <button
+          class="dialogo__cerrar"
+          type="button"
+          data-cerrar-detalle
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+
+        <img class="detalle__foto" id="detalle-foto" alt="" />
+
+        <h2 class="dialogo__titulo detalle__titulo" id="detalle-titulo"></h2>
+
+        <p class="detalle__direccion" id="detalle-direccion"></p>
+
+        <div class="detalle__acciones" id="detalle-acciones">
+          <a class="sucursal__accion" id="detalle-fono" href=""></a>
+          <a
+            class="sucursal__accion sucursal__accion--whatsapp"
+            id="detalle-whatsapp"
+            href=""
+            target="_blank"
+            rel="noopener"
+            >WhatsApp</a
+          >
+        </div>
+      </div>
     </dialog>
 
     <script type="module" src="static/js/app.js"></script>
