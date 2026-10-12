@@ -826,9 +826,9 @@ button {
   user-select: none;
 }
 
-/* La pista con bucle se mueve sola: el iman de celdas pelea con el
-   acercamiento al objetivo, que escribe el desplazamiento en cada cuadro. */
-.carrusel__pista[data-carrusel-bucle] {
+/* La pista con cinta se mueve sola: el iman de celdas pelea con el avance, que
+   escribe el desplazamiento en cada cuadro. */
+.carrusel__pista[data-carrusel-velocidad] {
   scroll-snap-type: none;
 }
 

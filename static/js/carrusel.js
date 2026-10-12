@@ -9,23 +9,24 @@ const SELECTOR_INTERRUPTOR = "[role='switch']";
 const CLASE_ARRASTRANDO = "carrusel__pista--arrastrando";
 const UMBRAL_ARRASTRE = 6;
 
-/* Bucle por pasos, opcional. Solo gira la pista que trae data-carrusel-bucle
-   con su intervalo en milisegundos: el menu tiene una veintena de carruseles y
-   ninguno de esos debe moverse solo.
+/* Cinta continua, opcional. Solo se mueve la pista que trae
+   data-carrusel-velocidad con su paso en pixeles por segundo: el menu tiene una
+   veintena de carruseles y ninguno de esos debe moverse solo.
 
-   El scroll nativo tiene tope, asi que para que el giro no se corte se clona el
+   El scroll nativo tiene tope, asi que para que la cinta no se corte se clona el
    juego de celdas a los dos lados y se arranca sobre el juego del medio. Cuando
    el desplazamiento se sale del juego del medio se le suma o se le resta un
    ancho de juego de golpe: el salto cae sobre contenido identico, asi que no se
    ve, y sirve igual hacia adelante que hacia atras. Es el barril del revolver,
    que no tiene principio ni fin. */
-const ATRIBUTO_BUCLE = "carruselBucle";
+const ATRIBUTO_VELOCIDAD = "carruselVelocidad";
 const CLASE_CLON = "carrusel__celda--clon";
-const INTERVALO_POR_DEFECTO = 4000;
+const VELOCIDAD_POR_DEFECTO = 40;
 
-/* Fraccion de la distancia que se cubre por cuadro al acercarse al objetivo.
-   Con 60 cuadros por segundo, la celda queda asentada en medio segundo. */
-const SUAVIZADO = 0.12;
+/* Ningun cuadro dura mas de una decima de segundo. Si la pestana estuvo oculta
+   el salto de tiempo se descarta: la cinta retoma su paso en vez de pegar un
+   tiron de cientos de pixeles. */
+const TRANSCURRIDO_MAXIMO = 0.1;
 
 function pasoDeCelda(pista) {
   const celda = pista.querySelector(".carrusel__celda");
@@ -69,19 +70,19 @@ function clonarCeldas(pista) {
 }
 
 function prepararBucle(pista) {
-  const atributo = pista.dataset[ATRIBUTO_BUCLE];
+  const atributo = pista.dataset[ATRIBUTO_VELOCIDAD];
   if (atributo === undefined) {
     return null;
   }
 
-  /* Sin clonar: con movimiento reducido no hay giro, y una lista triplicada
+  /* Sin clonar: con movimiento reducido no hay cinta, y una lista triplicada
      solo confundiria al recorrerla a mano. */
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     return null;
   }
 
   const leida = Number(atributo);
-  const intervalo = leida > 0 ? leida : INTERVALO_POR_DEFECTO;
+  const velocidad = leida > 0 ? leida : VELOCIDAD_POR_DEFECTO;
 
   const originales = clonarCeldas(pista);
   const cantidad = originales.length;
@@ -99,22 +100,17 @@ function prepararBucle(pista) {
      cada cuadro obligaria al navegador a recalcular la pagina 60 veces por
      segundo. */
   let anchoDeUnJuego = 0;
-  let paso = 0;
+  let hayBucle = false;
 
   function medir() {
     anchoDeUnJuego =
       primerClonPosterior.getBoundingClientRect().left -
       primerOriginal.getBoundingClientRect().left;
 
-    /* Un juego son todas las celdas: el paso de una es el juego repartido. */
-    paso = anchoDeUnJuego / cantidad;
-
     /* Hay que poder llegar al juego siguiente y al anterior: si la pista no da
        para eso, el salto invisible no tiene donde caer y es mejor quedarse
        quieto que empujar contra el tope. */
-    if (pista.scrollWidth - pista.clientWidth < 2 * anchoDeUnJuego) {
-      paso = 0;
-    }
+    hayBucle = pista.scrollWidth - pista.clientWidth >= 2 * anchoDeUnJuego;
   }
 
   medir();
@@ -125,95 +121,48 @@ function prepararBucle(pista) {
 
   new ResizeObserver(medir).observe(pista);
 
-  /* Apagado es cosa del interruptor; pausado es momentaneo (puntero encima,
-     foco, pestana oculta). El giro necesita los dos en verde. */
+  /* El unico freno es el interruptor: la cinta no se detiene al pasar el puntero
+     ni al enfocar, solo cuando alguien la apaga. */
   let apagado = false;
-  let pausado = false;
   let anterior = null;
-  let objetivo = pista.scrollLeft;
-  let acumulado = 0;
 
   function girar(ahora) {
     if (anterior === null) {
       anterior = ahora;
     }
 
-    const transcurrido = (ahora - anterior) / 1000;
+    const transcurrido = Math.min((ahora - anterior) / 1000, TRANSCURRIDO_MAXIMO);
     anterior = ahora;
 
-    if (anchoDeUnJuego > 0) {
-      if (!apagado && !pausado) {
-        acumulado += transcurrido * 1000;
-
-        if (acumulado >= intervalo) {
-          acumulado = 0;
-          objetivo += paso;
-        }
-
-        /* Se llega al objetivo acercandose, no de un salto seco. */
-        const distancia = objetivo - pista.scrollLeft;
-        if (Math.abs(distancia) < 1) {
-          pista.scrollLeft = objetivo;
-        } else {
-          pista.scrollLeft += distancia * SUAVIZADO;
-        }
-      } else {
-        /* Sin giro, el objetivo solo acompaña a la pista: al reactivar no debe
-           devolverla de un tiron. */
-        objetivo = pista.scrollLeft;
+    if (hayBucle) {
+      if (!apagado) {
+        /* Avance parejo: sin objetivo ni saltos, un tramo de cinta por cuadro. */
+        pista.scrollLeft += transcurrido * velocidad;
       }
 
-      /* El encierro corre siempre, tambien con el avance apagado: asi el
+      /* El encierro corre siempre, tambien con la cinta detenida: asi el
          arrastre manual tampoco encuentra borde. Los dos limites caen sobre
          contenido identico al del lado opuesto, asi que el salto no se ve. */
       while (pista.scrollLeft >= 2 * anchoDeUnJuego) {
         pista.scrollLeft -= anchoDeUnJuego;
-        objetivo -= anchoDeUnJuego;
       }
 
       while (pista.scrollLeft < anchoDeUnJuego) {
         pista.scrollLeft += anchoDeUnJuego;
-        objetivo += anchoDeUnJuego;
       }
     }
 
     window.requestAnimationFrame(girar);
   }
 
-  function reanudar() {
-    /* Se descarta el tiempo detenido: si no, al volver arrancaria de golpe. */
-    anterior = null;
-    acumulado = 0;
-  }
-
-  function detener() {
-    pausado = true;
-  }
-
-  function seguir() {
-    pausado = false;
-    reanudar();
-  }
-
-  pista.addEventListener("pointerenter", detener);
-  pista.addEventListener("pointerleave", seguir);
-  pista.addEventListener("focusin", detener);
-  pista.addEventListener("focusout", seguir);
-
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden) {
-      detener();
-    } else {
-      seguir();
-    }
-  });
-
   window.requestAnimationFrame(girar);
 
   return {
     activar() {
       apagado = false;
-      reanudar();
+      /* Se descarta el tiempo detenido: si no, al reactivar la cinta arrancaria
+         con el atraso acumulado. */
+      anterior = null;
     },
     desactivar() {
       apagado = true;
